@@ -96,7 +96,7 @@ class network(object):
                 nextNet.layers[layer].nodes[node].bias = self.layers[layer].nodes[node].bias + random.uniform(-0.5,0.5)
         return nextNet
 
-if True:
+if __name__ == "__main__":
     networks = []
     for i in range(10):
         networks.append(network([2,5,1]))
