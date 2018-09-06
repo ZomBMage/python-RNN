@@ -69,12 +69,7 @@ class network(object):
     def loadInputs(self):
         for node in self.layers[0].nodes:
             node.inputvalue = random.randint(0,100) # change number when actually allocating it
-    def updateConnectionWeights():
-        for layer in self.layers:
-            for node in layer.nodes:
-                for connection in layer.outputs:
-                    # do some magic shit
-                    pass
+            
     def __init__(self, layers):
         self.metalayers = layers
         self.layers = []
